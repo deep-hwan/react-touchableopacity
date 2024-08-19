@@ -52,6 +52,8 @@ export function TouchableOpacity({
 
   const tab_theme = TabTheme({
     ...props,
+    width: props.width ?? "auto",
+    positionType: props.positionType ?? "relative",
     display: props.display ?? "flex",
     direction: props.direction ?? "row",
     align: props.align ?? "center",
@@ -63,7 +65,7 @@ export function TouchableOpacity({
     txtAlign: props.txtAlign ?? "center",
     whiteSpace: props?.ellipsis?.ellipsis
       ? "normal"
-      : props.whiteSpace ?? "pre-line",
+      : props.whiteSpace ?? "nowrap",
     userSelect: props.userSelect ? props.userSelect : "none",
     cursor: props.cursor ? props.cursor : onClick && "pointer",
     transitionTime: props.transitionTime ?? 0.3,
