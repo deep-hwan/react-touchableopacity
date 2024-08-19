@@ -51,6 +51,7 @@ export const Button = forwardRef<HTMLButtonElement, Types>(
       align: props.align ?? "center",
       crossAlign: props.crossAlign ?? "center",
       minHeight: restProps.minHeight ?? TAB_SIZE[as].minHeight,
+      whiteSpace: restProps.whiteSpace ?? "nowrap",
       txtColor: restProps.txtColor ?? "#fff",
       padding:
         (as === "s" && { vertical: 11, horizontal: 16 }) ||
