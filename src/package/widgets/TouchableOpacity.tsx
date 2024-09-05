@@ -20,7 +20,7 @@ type AttriType = Omit<
 
 type Types = {
   as?: "div" | "li" | "span" | "button";
-  button_disabled?: boolean | null;
+  disabled?: boolean | null;
 } & AttriType &
   TabType;
 
@@ -32,7 +32,7 @@ export function TouchableOpacity({
   ...props
 }: Types) {
   const { elementProps } = extandedProps(props);
-  const mq_styles = extandedMediaQuery({ mediaQuery: props.mediaQuery });
+  const mq_styles = extandedMediaQuery({ _mediaQuery: props._mediaQuery });
 
   const TYPOGRAPH_WEIGHT = {
     lighter: { fontWeight: "300" },
@@ -75,15 +75,18 @@ export function TouchableOpacity({
   const globel_theme = {
     ...(tab_theme as any),
     ...mq_styles,
-    "&:hover": TabTheme({ ...props.hover }),
-    "&:active": TabTheme({ ...props.active }),
-    "&:disabled": TabTheme({ ...props.disabled }),
+    "&:hover": TabTheme({ ...props._hover }),
+    "&:active": TabTheme({
+      ...props._active,
+      opacity: props._active?.opacity ?? 0.75,
+    }),
+    "&:disabled": TabTheme({ ...props._disabled }),
   };
 
   const Button = () => (
     <button
       className="TouchableOpacity"
-      disabled={props.button_disabled}
+      disabled={props.disabled}
       css={globel_theme}
       onClick={onClick}
       {...elementProps}
@@ -94,7 +97,7 @@ export function TouchableOpacity({
 
   return (
     <>
-      {typeof props.button_disabled === "boolean" ? (
+      {typeof props.disabled === "boolean" ? (
         <Button />
       ) : (
         <>

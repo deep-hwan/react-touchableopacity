@@ -5,7 +5,7 @@ import { TouchableOpacity } from "./package/widgets/TouchableOpacity";
 export default function App() {
   return (
     <>
-      <Button width="100%" mediaQuery={{ s1440: { width: "auto" } }}>
+      <Button width="100%" _mediaQuery={{ s1440: { width: "auto" } }} disabled>
         Button
       </Button>
 
@@ -14,7 +14,8 @@ export default function App() {
         as="span"
         padding={{ all: 10 }}
         backgroundColor="#f8f9fc"
-        mediaQuery={{
+        onClick={() => {}}
+        _mediaQuery={{
           s1280: { backgroundColor: "#333", txtColor: "#fff" },
           s600: { padding: { all: 14 }, borderRadius: 12 },
           s428: { borderRadius: 1 },

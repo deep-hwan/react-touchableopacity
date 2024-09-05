@@ -14,14 +14,14 @@ type AttriType = Omit<
 //
 type Types = {
   as?: "s" | "m" | "l";
-  button_disabled?: boolean;
+  disabled?: boolean;
 } & AttriType &
   TabType;
 
 //
 export const Button = forwardRef<HTMLButtonElement, Types>(
   (props: Types, ref: ForwardedRef<HTMLButtonElement>) => {
-    const { as = "l", disabled, button_disabled, ...restProps } = props;
+    const { as = "l", _disabled, ...restProps } = props;
     const { elementProps } = extandedProps(restProps);
 
     const TAB_SIZE = {
@@ -42,7 +42,7 @@ export const Button = forwardRef<HTMLButtonElement, Types>(
       },
     };
 
-    const mq_styles = extandedMediaQuery({ mediaQuery: props.mediaQuery });
+    const mq_styles = extandedMediaQuery({ _mediaQuery: props._mediaQuery });
 
     const tab_theme = TabTheme({
       ...props,
@@ -70,17 +70,17 @@ export const Button = forwardRef<HTMLButtonElement, Types>(
       ...mq_styles,
 
       "&:hover": TabTheme({
-        ...props.hover,
+        ...props._hover,
         filter: "saturate(88%)",
         shadow: { x: 0, y: 0, blur: 0 },
       }),
       "&:active": TabTheme({
-        ...props.active,
+        ...props._active,
         opacity: 0.8,
         shadow: { x: 0, y: 0, blur: 0 },
       }),
       "&:disabled": TabTheme({
-        ...props.disabled,
+        ...props._disabled,
         backgroundColor: "#ccc",
         txtColor: "#fff",
       }),
@@ -91,7 +91,6 @@ export const Button = forwardRef<HTMLButtonElement, Types>(
         className="button"
         ref={ref}
         type={restProps.type ?? "button"}
-        disabled={button_disabled}
         css={globel_theme}
         {...elementProps}
       >

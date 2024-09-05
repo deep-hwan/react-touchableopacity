@@ -3,7 +3,7 @@ import React, { ButtonHTMLAttributes } from "react";
 type AttriType = Omit<ButtonHTMLAttributes<HTMLButtonElement>, "color" | "disabled">;
 export declare const Button: React.ForwardRefExoticComponent<{
     as?: "s" | "m" | "l" | undefined;
-    button_disabled?: boolean | undefined;
+    disabled?: boolean | undefined;
 } & AttriType & {
     display?: "none" | "flex" | undefined;
     direction?: "row" | "column" | undefined;
@@ -110,7 +110,7 @@ export declare const Button: React.ForwardRefExoticComponent<{
         bar?: boolean | undefined;
     } | undefined;
 } & {
-    hover?: ({
+    _hover?: ({
         display?: "none" | "flex" | undefined;
         direction?: "row" | "column" | undefined;
         flex?: string | number | undefined;
@@ -216,7 +216,7 @@ export declare const Button: React.ForwardRefExoticComponent<{
             bar?: boolean | undefined;
         } | undefined;
     }) | undefined;
-    active?: ({
+    _active?: ({
         display?: "none" | "flex" | undefined;
         direction?: "row" | "column" | undefined;
         flex?: string | number | undefined;
@@ -322,7 +322,7 @@ export declare const Button: React.ForwardRefExoticComponent<{
             bar?: boolean | undefined;
         } | undefined;
     }) | undefined;
-    disabled?: ({
+    _disabled?: ({
         display?: "none" | "flex" | undefined;
         direction?: "row" | "column" | undefined;
         flex?: string | number | undefined;
@@ -428,7 +428,7 @@ export declare const Button: React.ForwardRefExoticComponent<{
             bar?: boolean | undefined;
         } | undefined;
     }) | undefined;
-    focus?: ({
+    _focus?: ({
         display?: "none" | "flex" | undefined;
         direction?: "row" | "column" | undefined;
         flex?: string | number | undefined;

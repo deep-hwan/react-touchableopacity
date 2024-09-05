@@ -34,57 +34,64 @@ var extandedProps = function (props) {
     return { elementProps: elementProps };
 };
 exports.extandedProps = extandedProps;
-var layoutKeys = ['width', 'minWidth', 'maxWidth', 'height', 'minHeight', 'maxHeight'];
+var layoutKeys = [
+    "width",
+    "minWidth",
+    "maxWidth",
+    "height",
+    "minHeight",
+    "maxHeight",
+];
 var flexKeys = [
-    'display',
-    'flex',
-    'direction',
-    'reverse',
-    'align',
-    'crossAlign',
-    'alignContent',
-    'alignSelf',
-    'wrap',
-    'flow',
-    'basis',
-    'grow',
-    'shrink',
-    'gap',
-    'crossGap',
-    'order',
+    "display",
+    "flex",
+    "direction",
+    "reverse",
+    "align",
+    "crossAlign",
+    "alignContent",
+    "alignSelf",
+    "wrap",
+    "flow",
+    "basis",
+    "grow",
+    "shrink",
+    "gap",
+    "crossGap",
+    "order",
 ];
-var positionKeys = ['position', 'axis', 'transform'];
+var positionKeys = ["position", "axis", "transform"];
 var layerKeys = [
-    'backgroundColor',
-    'background',
-    'backgroundRepeat',
-    'backgroundSize',
-    'backgroundPosition',
-    'backgroundClip',
-    'backgroundImageUrl',
-    'filter',
-    'shadow',
-    'zIndex',
-    'cursor',
-    'userSelect',
-    'transitionTime',
-    'opacity',
+    "backgroundColor",
+    "background",
+    "backgroundRepeat",
+    "backgroundSize",
+    "backgroundPosition",
+    "backgroundClip",
+    "backgroundImageUrl",
+    "filter",
+    "shadow",
+    "zIndex",
+    "cursor",
+    "userSelect",
+    "transitionTime",
+    "opacity",
 ];
-var borderKeys = ['border', 'borderRadius'];
-var spaceKeys = ['padding', 'margin'];
-var scollKeys = ['scroll'];
-var hoverActiveKeys = ['active', 'focus', 'hover', 'disabled'];
+var borderKeys = ["border", "borderRadius"];
+var spaceKeys = ["padding", "margin"];
+var scollKeys = ["scroll"];
+var hoverActiveKeys = ["_active", "_focus", "_hover", "_disabled"];
 var typoKeys = [
-    'txtColor',
-    'color',
-    'txtSize',
-    'size',
-    'align',
-    'txtAlign',
-    'txtWeight',
-    'whiteSpace',
-    'txtTransform',
-    'ellipsis',
-    'txtDecoration',
+    "txtColor",
+    "color",
+    "txtSize",
+    "size",
+    "align",
+    "txtAlign",
+    "txtWeight",
+    "whiteSpace",
+    "txtTransform",
+    "ellipsis",
+    "txtDecoration",
 ];
-var mediaQueryKeys = ['mediaQuery'];
+var mediaQueryKeys = ["_mediaQuery"];

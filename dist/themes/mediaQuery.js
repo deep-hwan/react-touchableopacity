@@ -17,17 +17,17 @@ var ViewThemes = function (props) { return (0, tab_1.TabTheme)(props); };
 var extandedMediaQuery = function (_a) {
     var _b;
     var _c, _d, _e, _f, _g, _h;
-    var mediaQuery = _a.mediaQuery;
+    var _mediaQuery = _a._mediaQuery;
     var mq_theme = function () {
         var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m;
-        if (mediaQuery) {
+        if (_mediaQuery) {
             return {
-                s1440: __assign(__assign({}, ViewThemes(mediaQuery.s1440 || {})), { '&:hover': ViewThemes(((_a = mediaQuery.s1440) === null || _a === void 0 ? void 0 : _a.hover) || {}), '&:active': ViewThemes(((_b = mediaQuery.s1440) === null || _b === void 0 ? void 0 : _b.active) || {}) }),
-                s1280: __assign(__assign({}, ViewThemes(mediaQuery.s1280 || {})), { '&:hover': ViewThemes(((_c = mediaQuery.s1280) === null || _c === void 0 ? void 0 : _c.hover) || {}), '&:active': ViewThemes(((_d = mediaQuery.s1280) === null || _d === void 0 ? void 0 : _d.active) || {}) }),
-                s1080: __assign(__assign({}, ViewThemes(mediaQuery.s1080 || {})), { '&:hover': ViewThemes(((_e = mediaQuery.s1080) === null || _e === void 0 ? void 0 : _e.hover) || {}), '&:active': ViewThemes(((_f = mediaQuery.s1080) === null || _f === void 0 ? void 0 : _f.active) || {}) }),
-                s768: __assign(__assign({}, ViewThemes(mediaQuery.s768 || {})), { '&:hover': ViewThemes(((_g = mediaQuery.s768) === null || _g === void 0 ? void 0 : _g.hover) || {}), '&:active': ViewThemes(((_h = mediaQuery.s768) === null || _h === void 0 ? void 0 : _h.active) || {}) }),
-                s600: __assign(__assign({}, ViewThemes(mediaQuery.s600 || {})), { '&:hover': ViewThemes(((_j = mediaQuery.s600) === null || _j === void 0 ? void 0 : _j.hover) || {}), '&:active': ViewThemes(((_k = mediaQuery.s600) === null || _k === void 0 ? void 0 : _k.active) || {}) }),
-                s428: __assign(__assign({}, ViewThemes(mediaQuery.s428 || {})), { '&:hover': ViewThemes(((_l = mediaQuery.s428) === null || _l === void 0 ? void 0 : _l.hover) || {}), '&:active': ViewThemes(((_m = mediaQuery.s428) === null || _m === void 0 ? void 0 : _m.active) || {}) }),
+                s1440: __assign(__assign({}, ViewThemes(_mediaQuery.s1440 || {})), { "&:hover": ViewThemes(((_a = _mediaQuery.s1440) === null || _a === void 0 ? void 0 : _a._hover) || {}), "&:active": ViewThemes(((_b = _mediaQuery.s1440) === null || _b === void 0 ? void 0 : _b._active) || {}) }),
+                s1280: __assign(__assign({}, ViewThemes(_mediaQuery.s1280 || {})), { "&:hover": ViewThemes(((_c = _mediaQuery.s1280) === null || _c === void 0 ? void 0 : _c._hover) || {}), "&:active": ViewThemes(((_d = _mediaQuery.s1280) === null || _d === void 0 ? void 0 : _d._active) || {}) }),
+                s1080: __assign(__assign({}, ViewThemes(_mediaQuery.s1080 || {})), { "&:hover": ViewThemes(((_e = _mediaQuery.s1080) === null || _e === void 0 ? void 0 : _e._hover) || {}), "&:active": ViewThemes(((_f = _mediaQuery.s1080) === null || _f === void 0 ? void 0 : _f._active) || {}) }),
+                s768: __assign(__assign({}, ViewThemes(_mediaQuery.s768 || {})), { "&:hover": ViewThemes(((_g = _mediaQuery.s768) === null || _g === void 0 ? void 0 : _g._hover) || {}), "&:active": ViewThemes(((_h = _mediaQuery.s768) === null || _h === void 0 ? void 0 : _h._active) || {}) }),
+                s600: __assign(__assign({}, ViewThemes(_mediaQuery.s600 || {})), { "&:hover": ViewThemes(((_j = _mediaQuery.s600) === null || _j === void 0 ? void 0 : _j._hover) || {}), "&:active": ViewThemes(((_k = _mediaQuery.s600) === null || _k === void 0 ? void 0 : _k._active) || {}) }),
+                s428: __assign(__assign({}, ViewThemes(_mediaQuery.s428 || {})), { "&:hover": ViewThemes(((_l = _mediaQuery.s428) === null || _l === void 0 ? void 0 : _l._hover) || {}), "&:active": ViewThemes(((_m = _mediaQuery.s428) === null || _m === void 0 ? void 0 : _m._active) || {}) }),
             };
         }
     };
