@@ -73,6 +73,7 @@ export declare const Button: React.ForwardRefExoticComponent<{
     transitionTime?: number | undefined;
     cursor?: "default" | "grab" | "pointer" | "zoom" | undefined;
     opacity?: number | undefined;
+    rotate?: string | number | undefined;
     userSelect?: "auto" | "none" | "contain" | "text" | "all" | undefined;
     scale?: string | number | undefined;
 } & {
@@ -179,6 +180,7 @@ export declare const Button: React.ForwardRefExoticComponent<{
         transitionTime?: number | undefined;
         cursor?: "default" | "grab" | "pointer" | "zoom" | undefined;
         opacity?: number | undefined;
+        rotate?: string | number | undefined;
         userSelect?: "auto" | "none" | "contain" | "text" | "all" | undefined;
         scale?: string | number | undefined;
     } & {
@@ -285,6 +287,7 @@ export declare const Button: React.ForwardRefExoticComponent<{
         transitionTime?: number | undefined;
         cursor?: "default" | "grab" | "pointer" | "zoom" | undefined;
         opacity?: number | undefined;
+        rotate?: string | number | undefined;
         userSelect?: "auto" | "none" | "contain" | "text" | "all" | undefined;
         scale?: string | number | undefined;
     } & {
@@ -391,6 +394,7 @@ export declare const Button: React.ForwardRefExoticComponent<{
         transitionTime?: number | undefined;
         cursor?: "default" | "grab" | "pointer" | "zoom" | undefined;
         opacity?: number | undefined;
+        rotate?: string | number | undefined;
         userSelect?: "auto" | "none" | "contain" | "text" | "all" | undefined;
         scale?: string | number | undefined;
     } & {
@@ -497,6 +501,7 @@ export declare const Button: React.ForwardRefExoticComponent<{
         transitionTime?: number | undefined;
         cursor?: "default" | "grab" | "pointer" | "zoom" | undefined;
         opacity?: number | undefined;
+        rotate?: string | number | undefined;
         userSelect?: "auto" | "none" | "contain" | "text" | "all" | undefined;
         scale?: string | number | undefined;
     } & {

@@ -78,6 +78,8 @@ export const TabTheme = ({
       props?.transitionTime && `${props?.transitionTime}s ease-in-out`,
     cursor: props?.cursor,
     opacity: props.opacity,
+    rotate:
+      typeof props.rotate === "number" ? props.rotate + "deg" : props.rotate,
     userSelect: props.userSelect,
     scale: props.scale,
 

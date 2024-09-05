@@ -92,6 +92,7 @@ type LayerType = {
   transitionTime?: number;
   cursor?: "default" | "grab" | "pointer" | "zoom";
   opacity?: number;
+  rotate?: string | number;
   userSelect?: "none" | "auto" | "text" | "contain" | "all";
   scale?: string | number;
 };

@@ -70,6 +70,7 @@ var TabTheme = function (_a) {
         transition: (props === null || props === void 0 ? void 0 : props.transitionTime) && "".concat(props === null || props === void 0 ? void 0 : props.transitionTime, "s ease-in-out"),
         cursor: props === null || props === void 0 ? void 0 : props.cursor,
         opacity: props.opacity,
+        rotate: typeof props.rotate === "number" ? props.rotate + "deg" : props.rotate,
         userSelect: props.userSelect,
         scale: props.scale,
         //
