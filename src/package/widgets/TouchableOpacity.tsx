@@ -80,7 +80,7 @@ export function TouchableOpacity({
       ...props._active,
       opacity: props._active?.opacity ?? 0.75,
     }),
-    "&:disabled": TabTheme({ ...props._disabled }),
+    "&:disabled": TabTheme({ ...props._disabled, txtColor: "#ccc" }),
   };
 
   const Button = () => (
